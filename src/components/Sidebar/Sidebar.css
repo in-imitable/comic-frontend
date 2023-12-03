@@ -1,0 +1,136 @@
+:root {
+    --navbar-low-dark: #4b5166;
+    --navbar-dark: #252833;
+    --FONT-FAMILY: "Inter", sans-serif;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: #0f1014;
+  
+}
+
+/* Sidebar */
+
+.left-container{
+    z-index: 50;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    text-align: center;
+    /* z-index: 50; */
+}
+
+.left-nav {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    min-width: 96px;
+    position: fixed;
+}
+
+.outline {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.outline .icon-container {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    margin-inline-end: 30px;
+    margin-inline-start: 30px;
+}
+
+.nav-icons-block {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-icon {
+    padding: 16px 0;
+    padding-inline-end: 8px;
+    padding-inline-start: 8px;
+}
+
+.left-logo {
+    position: fixed;
+    top: 0;
+    z-index: 30;
+}
+
+.nav-title {
+    display: none;
+    padding: 12px 0;
+    font-family: var(--FONT-FAMILY);
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.backdropWidth {
+    height: 100vh;
+    position: absolute;
+}
+
+.glow-outline {
+    filter: drop-shadow(0 0 20px hsla(0, 0%, 100%, 0.6));
+}
+
+.active-glow {
+    filter: drop-shadow(0 0 20px hsla(0, 0%, 100%, 0.6));
+}
+
+.glow-icon {
+    filter: drop-shadow(0 0 20px hsla(0, 0%, 100%, 0.6));
+}
+
+/* Sidebar Hover */
+.sideNav:hover .nav-title,
+.nav-icons-block:hover .nav-title {
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-icons-block:hover .nav-title {
+    transform: translateX(5px); 
+}
+
+.nav-icons-block:hover .outline.icon-container .nav-title {
+    font-weight: 600 !important;
+}
+
+.nav-icons-block {
+    color: #909193;
+}
+
+.active {
+    color: white !important;
+}
+
+.active .nav-icons-block {
+    color: white !important;
+}
+
+.active:hover {
+    color: white;
+}
+
+.pop-up-icon {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-icons-block:hover .pop-up-icon {
+    transform: scale(1.2);
+  }

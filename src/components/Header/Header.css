@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+/* .content {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 100vh; 
+} */
+
+.backgroundShadowBottom {
+  background: linear-gradient(180deg, rgba(15, 16, 20, 0) 73.08%, rgba(15, 16, 20, .01) 77.84%, rgba(15, 16, 20, .05) 79.74%, #0f1014);
+  bottom: 32px;
+  cursor: pointer;
+  height: 100vh;
+  left: 0;
+  max-height: 58vw;
+  min-height: 49vw;
+  position: relative;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.backgroundShadowLeft {
+  background: linear-gradient(270deg, rgba(15, 16, 20, 0) 73.08%, rgba(15, 16, 20, 0) 77.84%, rgba(15, 16, 20, 5%) 79.74%, #0f1014);
+  bottom: 32px;
+  cursor: pointer;
+  height: 100vh;
+  left: 96px;
+  max-height: 58vw;
+  min-height: 49vw;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-background {
+  clip-path: inset(0);
+  height: 100vh;
+  margin-bottom: -2rem;
+  max-height: 58vw;
+  min-height: 49vw;
+  position: relative;
+  z-index: 0;
+}
+
+/* linear-gradient(180deg,rgba(15,16,20,0) 73.08%,rgba(15,16,20,.01) 77.84%,rgba(15,16,20,.05) 79.74%,#0f1014) */
